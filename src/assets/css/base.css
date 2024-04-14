@@ -84,3 +84,39 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+body:hover > #trailer {
+  opacity: 1;
+}
+
+#trailer {
+  height: 20px;
+  width: 20px;
+  background-color: var(--color-text);
+  border-radius: 20px;
+
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 10000;
+
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 500ms ease;
+
+  display: grid;
+  place-items: center;
+}
+
+#trailer:not([data-type='']) > #trailer-icon {
+  opacity: 1;
+}
+
+#trailer-icon {
+  height: 6px;
+  /* font-size: 6px;
+  line-height: 4px; */
+
+  opacity: 0;
+  transition: opacity 400ms ease;
+}

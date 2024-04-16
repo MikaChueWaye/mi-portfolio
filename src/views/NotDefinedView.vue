@@ -3,12 +3,12 @@
     <h1>What are you doing here? There is nothing to see there... yet...</h1>
     <p>Shoo! Shoo!</p>
   </div>
-  <div class="demo-content spring-physics-demo interactable" data-type="video">
+  <!-- <div class="demo-content spring-physics-demo interactable" data-type="video">
     <div class="line">
       <div class="square shadow"></div>
       <div class="square el"></div>
     </div>
-  </div>
+  </div> -->
   <!-- <canvas class="canvas-polka-dot"></canvas> -->
 </template>
 

@@ -34,3 +34,25 @@ a,
     /* padding: 0 2rem; */
   }
 }
+
+.demo-content {
+  width: 290px;
+  height: 200px;
+  z-index: 10;
+}
+
+.shadow {
+  position: absolute;
+  opacity: 0.2;
+}
+
+.square {
+  position: absolute;
+  pointer-events: none;
+  width: 28px;
+  height: 28px;
+  margin: 1px;
+  font-size: 14px;
+  color: rebeccapurple;
+  background-color: red;
+}

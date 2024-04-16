@@ -1,5 +1,6 @@
 import './assets/css/main.css'
 import './assets/js/trailer.js'
+import './assets/js/animations.js'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'

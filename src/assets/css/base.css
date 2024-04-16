@@ -106,6 +106,7 @@ body:hover > #trailer {
 
   display: grid;
   place-items: center;
+  overflow: hidden;
 }
 
 #trailer:not([data-type='']) > #trailer-icon {

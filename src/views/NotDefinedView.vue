@@ -1,7 +1,15 @@
 <template>
-  <div class="centered-text interactable" data-type="link">
-    <h1>What are you doing here? There is nothing to see there... yet...</h1>
-    <p>Shoo! Shoo!</p>
+  <div class="centered-text">
+    <h1 class="interactable" data-type="link">
+      What are you doing here? There is nothing to see there... yet...
+    </h1>
+    <p class="interactable" data-type="link">Shoo! Shoo!</p>
+    <img
+      src="/src/assets/img/cat-computer.gif"
+      alt="cat-cumputer.gif"
+      class="interactable"
+      data-type="video"
+    />
   </div>
   <!-- <div class="demo-content spring-physics-demo interactable" data-type="video">
     <div class="line">

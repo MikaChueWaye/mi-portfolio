@@ -5,7 +5,7 @@ const animateTrailer = (e, interacting) => {
     y = e.clientY - trailer.offsetHeight / 2
 
   const keyframes = {
-    transform: `translate(${x}px, ${y}px) scale(${interacting ? 8 : 1})`
+    transform: `translate(${x + 20}px, ${y + 20}px) scale(${interacting ? 8 : 1})`
   }
 
   trailer.animate(keyframes, {

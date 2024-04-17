@@ -21,7 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
   var linkTrailerClickAnimation = anime({
     targets: '.icon',
     translateY: [
-      { value: -10 },
+      { value: 2 },
+      { value: -10, easing: 'spring(1, 80, 10, 15)' },
       { value: 10, duration: 0 },
       { value: 0, easing: 'spring(1, 80, 10, 10)', duration: 1000 }
     ],

@@ -20,14 +20,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var linkTrailerClickAnimation = anime({
     targets: '.icon',
-    keyframes: [
-      { translateX: 10, translateY: -10, easing: 'spring(0.1, 100, 10, 0)' },
-      { translateX: [10, -10], translateY: [-10, 10], duration: 0 },
-      { translateX: 0, translateY: 0 }
+    translateY: [
+      { value: -10 },
+      { value: 10, duration: 0 },
+      { value: 0, easing: 'spring(1, 80, 10, 10)', duration: 1000 }
     ],
     direction: 'alternate',
     loop: false,
-    easing: 'spring(0.3, 100, 10, 0)',
+    easing: 'spring(1, 80, 10, 10)',
     autoplay: false
   })
 

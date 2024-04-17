@@ -9,9 +9,11 @@
 }
 
 .arrow-up-left {
-  content: url('../img/arrow-up-right.svg');
+  content: url('../img/icons/arrow-up.svg');
+  rotate: 45deg;
+  scale: 1.1;
 }
 
 .play {
-  content: url('../img/play.svg');
+  content: url('../img/icons/play.svg');
 }

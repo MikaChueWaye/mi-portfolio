@@ -14,6 +14,16 @@
   scale: 1.1;
 }
 
+.arrow-left {
+  content: url('../img/icons/arrow-up.svg');
+  rotate: -90deg;
+}
+
+.arrow-right {
+  content: url('../img/icons/arrow-up.svg');
+  rotate: 90deg;
+}
+
 .play {
   content: url('../img/icons/play.svg');
 }

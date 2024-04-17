@@ -18,6 +18,10 @@ const getTrailerClass = (type) => {
   switch (type) {
     case 'video':
       return 'icon play'
+    case 'arrow-left':
+      return 'icon arrow-left'
+    case 'arrow-right':
+      return 'icon arrow-right'
     default:
       return 'icon arrow-up-left'
   }

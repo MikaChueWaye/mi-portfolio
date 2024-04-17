@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var trailer = document.querySelector('#trailer')
   var interactables = document.querySelectorAll('.interactable')
 
+  //------- TRAILER ANIMATIONS -----------------------------------------
   var defaultTrailerClickAnimation = anime({
     targets: '.icon',
     rotate: 360,
@@ -21,8 +22,34 @@ document.addEventListener('DOMContentLoaded', function () {
   var linkTrailerClickAnimation = anime({
     targets: '.icon',
     translateY: [
-      { value: 2 },
+      { value: 3 },
       { value: -10, easing: 'spring(1, 80, 10, 15)' },
+      { value: 10, duration: 0 },
+      { value: 0, easing: 'spring(1, 80, 10, 10)', duration: 1000 }
+    ],
+    direction: 'alternate',
+    loop: false,
+    easing: 'spring(1, 80, 10, 10)',
+    autoplay: false
+  })
+
+  var arrowLeftTrailerClickAnimation = anime({
+    targets: '.icon',
+    translateY: [
+      { value: -10, easing: 'spring(1, 80, 10, 20)' },
+      { value: 10, duration: 0 },
+      { value: 0, easing: 'spring(1, 80, 10, 10)', duration: 1000 }
+    ],
+    direction: 'alternate',
+    loop: false,
+    easing: 'spring(1, 80, 10, 10)',
+    autoplay: false
+  })
+
+  var arrowRightTrailerClickAnimation = anime({
+    targets: '.icon',
+    translateY: [
+      { value: -10, easing: 'spring(1, 80, 10, 20)' },
       { value: 10, duration: 0 },
       { value: 0, easing: 'spring(1, 80, 10, 10)', duration: 1000 }
     ],
@@ -34,17 +61,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var trailerMouseoverAnimation = anime({
     targets: '#trailer',
-    opacity: 0.8,
+    opacity: 0.7,
     direction: 'alternate',
     loop: false,
-    autoplay: false
+    autoplay: false,
+    duration: 200
   })
+
+  //--------------------------------------------------------
 
   interactables.forEach((interactable) => {
     interactable.onclick = function () {
       switch (interactable.dataset.type) {
         case 'link':
           linkTrailerClickAnimation.play()
+          break
+        case 'arrow-left':
+          arrowLeftTrailerClickAnimation.restart()
+          // arrowLeftTrailerClickAnimation.play()
+          break
+        case 'arrow-right':
+          arrowLeftTrailerClickAnimation.restart()
+          // arrowRightTrailerClickAnimation.play()
           break
         default:
           defaultTrailerClickAnimation.play()

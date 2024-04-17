@@ -1,6 +1,7 @@
 import anime from 'animejs/lib/anime.es.js'
 
 document.addEventListener('DOMContentLoaded', function () {
+  var trailer = document.querySelector('#trailer')
   var interactables = document.querySelectorAll('.interactable')
 
   var defaultTrailerClickAnimation = anime({
@@ -59,7 +60,9 @@ document.addEventListener('DOMContentLoaded', function () {
     interactable.onmouseout = function () {
       trailerMouseoverAnimation.restart()
       trailerMouseoverAnimation.pause()
-      document.querySelector('#trailer').style = ''
+      trailer.style = ''
     }
   })
+
+  trailer.style = ''
 })

@@ -96,8 +96,8 @@ body:hover > #trailer {
   border-radius: 20px;
 
   position: fixed;
-  left: 0px;
-  top: 0px;
+  left: -20px;
+  top: -20px;
   z-index: 10000;
 
   pointer-events: none;

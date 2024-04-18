@@ -1,9 +1,7 @@
 <template>
   <div class="centered-text">
-    <h1 class="interactable" data-type="link">
-      What are you doing here? There is nothing to see there... yet...
-    </h1>
-    <p class="interactable" data-type="arrow-right">Shoo! Shoo!</p>
+    <h1 class="link">What are you doing here? There is nothing to see there... yet...</h1>
+    <p>Shoo! Shoo!</p>
     <img
       src="/src/assets/img/cat-computer.gif"
       alt="cat-cumputer.gif"

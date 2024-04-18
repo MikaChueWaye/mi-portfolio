@@ -2,7 +2,9 @@ import anime from 'animejs/lib/anime.es.js'
 
 document.addEventListener('DOMContentLoaded', function () {
   var trailer = document.querySelector('#trailer')
+  var trailerIcon = document.querySelector('#trailer-icon')
   var interactables = document.querySelectorAll('.interactable')
+  var links = document.querySelectorAll('.link')
 
   //------- TRAILER ANIMATIONS -----------------------------------------
   var defaultTrailerClickAnimation = anime({
@@ -81,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
           // arrowLeftTrailerClickAnimation.play()
           break
         case 'arrow-right':
-          arrowLeftTrailerClickAnimation.restart()
+          arrowRightTrailerClickAnimation.restart()
           // arrowRightTrailerClickAnimation.play()
           break
         default:
@@ -93,6 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     interactable.onmouseover = function () {
+      trailerIcon.style = ''
       trailerMouseoverAnimation.play()
     }
 
@@ -100,6 +103,21 @@ document.addEventListener('DOMContentLoaded', function () {
       trailerMouseoverAnimation.restart()
       trailerMouseoverAnimation.pause()
       trailer.style = ''
+    }
+  })
+
+  links.forEach((link) => {
+    link.onclick = function () {
+      linkTrailerClickAnimation.play()
+    }
+
+    link.onmouseover = function () {
+      trailerIcon.style.opacity = 1
+      trailerIcon.style.scale = 2.3
+    }
+
+    link.onmouseout = function () {
+      trailerIcon.style = ''
     }
   })
 

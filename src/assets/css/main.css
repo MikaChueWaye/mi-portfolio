@@ -35,24 +35,27 @@ a,
   }
 }
 
-.demo-content {
-  width: 290px;
-  height: 200px;
-  z-index: 10;
+.link {
+  display: inline-block;
+  position: relative;
 }
 
-.shadow {
+.link:after {
+  content: '';
+  width: 0px;
+  height: 2px;
   position: absolute;
-  opacity: 0.2;
+  top: 100%;
+  left: 0;
+  background: black;
+  transition: 300ms;
 }
 
-.square {
-  position: absolute;
-  pointer-events: none;
-  width: 28px;
-  height: 28px;
-  margin: 1px;
-  font-size: 14px;
-  color: rebeccapurple;
-  background-color: red;
+.link:hover:after {
+  width: 100%;
+}
+
+.link:not(:hover):after {
+  right: 0;
+  left: auto;
 }

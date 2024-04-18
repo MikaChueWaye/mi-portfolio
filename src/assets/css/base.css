@@ -56,6 +56,11 @@
   box-sizing: border-box;
   margin: 0;
   font-weight: normal;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
 }
 
 body {

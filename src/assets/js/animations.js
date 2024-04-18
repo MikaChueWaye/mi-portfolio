@@ -111,6 +111,10 @@ document.addEventListener('DOMContentLoaded', function () {
       linkTrailerClickAnimation.play()
     }
 
+    link.onauxclick = function () {
+      linkTrailerClickAnimation.play()
+    }
+
     link.onmouseover = function () {
       trailerIcon.style.opacity = 1
       trailerIcon.style.scale = 2.3

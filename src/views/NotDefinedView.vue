@@ -1,6 +1,8 @@
 <template>
   <div class="centered-text">
-    <h1 class="link">What are you doing here? There is nothing to see there... yet...</h1>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      ><h1 class="link">What are you doing here? There is nothing to see there... yet...</h1></a
+    >
     <p>Shoo! Shoo!</p>
     <img
       src="/src/assets/img/cat-computer.gif"

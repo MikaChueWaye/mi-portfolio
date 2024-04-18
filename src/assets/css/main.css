@@ -43,7 +43,7 @@
 .link:after {
   content: '';
   width: 0px;
-  height: 2px;
+  height: 1px;
   position: absolute;
   top: 100%;
   left: 0;

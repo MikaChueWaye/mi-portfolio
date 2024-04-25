@@ -2,11 +2,11 @@
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(276deg) brightness(105%) contrast(104%);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   .icon {
     filter: invert(5%) sepia(11%) saturate(9%) hue-rotate(360deg) brightness(103%) contrast(91%);
   }
-}
+} */
 
 .arrow-up-left {
   content: url('../img/icons/arrow-up.svg');

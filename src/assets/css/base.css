@@ -1,5 +1,18 @@
-/* color palette from <https://github.com/vuejs/theme> */
 :root {
+  --text: #0e100e;
+  --background: #f9faf9;
+  --primary: #60a5fa;
+  --secondary: #5eead4;
+  --accent: #ff6b75;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../font/montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+/* color palette from <https://github.com/vuejs/theme> */
+/* :root {
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
   --vt-c-white-mute: #f2f2f2;
@@ -19,10 +32,10 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
-}
+} */
 
 /* semantic color variables for this project */
-:root {
+/* :root {
   --color-background: var(--vt-c-white);
   --color-background-soft: var(--vt-c-white-soft);
   --color-background-mute: var(--vt-c-white-mute);
@@ -34,19 +47,16 @@
   --color-text: var(--vt-c-text-light-1);
 
   --section-gap: 160px;
-}
+} */
 
+/* TODO add black theme */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
-
-    --color-border: var(--vt-c-divider-dark-2);
-    --color-border-hover: var(--vt-c-divider-dark-1);
-
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
+    --text: #0e100e;
+    --background: #f9faf9;
+    --primary: #60a5fa;
+    --secondary: #5eead4;
+    --accent: #ff6b75;
   }
 }
 
@@ -57,21 +67,40 @@
   margin: 0;
   font-weight: normal;
   text-decoration: none;
+  font-size: 1.2rem;
+  /* line-height: 1.3rem; */
 }
 
-a:visited {
-  color: inherit;
+h1 {
+  font-size: 3.5rem;
 }
+
+h2 {
+  font-size: 2.73rem;
+}
+
+h3 {
+  font-size: 1.97rem;
+}
+
+a {
+  color: var(--accent);
+}
+
+/* a:visited {
+  color: inherit;
+} */
 
 body {
   min-height: 100vh;
-  color: var(--color-text);
-  background: var(--color-background);
+  color: var(--text);
+  background: var(--background);
   transition:
     color 0.5s,
     background-color 0.5s;
   line-height: 1.6;
   font-family:
+    Montserrat,
     Inter,
     -apple-system,
     BlinkMacSystemFont,
@@ -97,7 +126,7 @@ body:hover > #trailer {
 #trailer {
   height: 20px;
   width: 20px;
-  background-color: var(--color-text);
+  background-color: var(--accent);
   border-radius: 20px;
 
   position: fixed;
@@ -107,7 +136,9 @@ body:hover > #trailer {
 
   pointer-events: none;
   opacity: 0;
-  transition: opacity 500ms ease;
+  transition:
+    opacity 500ms ease,
+    background-color 300ms ease;
 
   display: grid;
   place-items: center;

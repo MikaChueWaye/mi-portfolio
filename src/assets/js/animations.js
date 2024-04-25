@@ -118,10 +118,12 @@ document.addEventListener('DOMContentLoaded', function () {
     link.onmouseover = function () {
       trailerIcon.style.opacity = 1
       trailerIcon.style.scale = 2.3
+      trailer.style.backgroundColor = '#ff6b75'
     }
 
     link.onmouseout = function () {
       trailerIcon.style = ''
+      trailer.style = ''
     }
   })
 

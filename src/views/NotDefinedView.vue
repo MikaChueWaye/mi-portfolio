@@ -1,7 +1,8 @@
 <template>
+  <div class="background jumbo"></div>
   <div class="centered-text">
     <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-      ><h1 class="link">What are you doing here? There is nothing to see there... yet...</h1></a
+      ><h3 class="link">What are you doing here? There is nothing to see there... yet...</h3></a
     >
     <p>Shoo! Shoo!</p>
     <img

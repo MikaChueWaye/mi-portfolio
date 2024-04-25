@@ -1,4 +1,4 @@
-@keyframes jumbo {
+@keyframes ray {
   from {
     background-position:
       50% 50%,
@@ -21,7 +21,7 @@
   z-index: -10;
 }
 
-.jumbo {
+.ray {
   --stripes: repeating-linear-gradient(
     100deg,
     #fff 0%,
@@ -61,21 +61,21 @@
   pointer-events: none;
 }
 
-.jumbo::after {
+.ray::after {
   content: '';
   position: absolute;
   inset: 0;
   background-image: var(--stripes), var(--rainbow);
   background-size: 200%, 100%;
-  animation: jumbo 60s linear infinite;
+  animation: ray 60s linear infinite;
   background-attachment: fixed;
   mix-blend-mode: difference;
 }
 
-/* .dark .jumbo {
+/* .dark .ray {
   background-image: var(--stripesDark), var(--rainbow);
   filter: blur(10px) opacity(50%) saturate(200%);
 }
-.dark .jumbo::after {
+.dark .ray::after {
   background-image: var(--stripesDark), var(--rainbow);
 } */

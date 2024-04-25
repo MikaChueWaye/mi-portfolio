@@ -1,9 +1,16 @@
-<script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
-</script>
+<script setup lang="ts"></script>
 
 <template>
+  <div class="background ray"></div>
   <main>
-    <TheWelcome />
+    <div>
+      <h1 class="title">://Bonjour !</h1>
+    </div>
   </main>
 </template>
+
+<style>
+.title {
+  font-family: Montserrat_Black_Italic;
+}
+</style>

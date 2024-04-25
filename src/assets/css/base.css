@@ -11,6 +11,11 @@
   src: url(../font/montserrat/Montserrat-VariableFont_wght.ttf);
 }
 
+@font-face {
+  font-family: Montserrat_Black_Italic;
+  src: url(../font/montserrat/static/Montserrat-BlackItalic.ttf);
+}
+
 /* color palette from <https://github.com/vuejs/theme> */
 /* :root {
   --vt-c-white: #ffffff;
@@ -73,14 +78,19 @@
 
 h1 {
   font-size: 3.5rem;
+  font-family: Montserrat_Black_Italic;
 }
 
 h2 {
   font-size: 2.73rem;
+  font-style: italic;
+  font-weight: bold;
 }
 
 h3 {
   font-size: 1.97rem;
+  font-style: italic;
+  font-weight: bold;
 }
 
 a {
